@@ -1,7 +1,7 @@
 # import the python datetime module to help us create a timestamp
 from datetime import date
 
-class Minnow:
+class Rosy_Boa:
 
     def __init__(self, name, species, food):
         # Establish the properties of each animal
@@ -9,7 +9,7 @@ class Minnow:
         self.name = name
         self.species = species
         self.date_added = date.today()
-        self.swimming = True
+        self.slithering = True
         self.food = food
 
     def feed(self):
