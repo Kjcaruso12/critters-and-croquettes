@@ -1,7 +1,4 @@
-from petting_area import Alpaca, Donkey, Goat, Lamb, Llama
-from glass_tank import Copperhead, Kenyan_Sand_Boa, Rosy_Boa, African_House_Snake, Rat_Snake
-from pond import Bluegill, Carp, Goldfish, Bass, Minnow
-from attractions import PettingZoo, SnakePit, Wetlands
+from models import Alpaca, Donkey, Goat, Lamb, Llama, Copperhead, Kenyan_Sand_Boa, Rosy_Boa, African_House_Snake, Rat_Snake, Bluegill, Carp, Goldfish, Bass, Minnow, PettingZoo, SnakePit, Wetlands
 
 varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")
 carl = Llama("Carl", "Llama", "morning", "grass")
