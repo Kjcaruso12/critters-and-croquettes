@@ -1,20 +1,16 @@
 # import the python datetime module to help us create a timestamp
 from datetime import date
+from models.animal.Animal import Animal
 
-class Goat:
+class Goat(Animal):
 
-    def __init__(self, name, species, shift, food):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
         self.shift = shift
-        self.food = food
 
     def feed(self):
-      return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+        print(f'on {date.today()}, {self.name} had its chin scratched so it would eat its {self.food}')
 
     def __str__(self):
         return f"{self.name} is a {self.species}"
