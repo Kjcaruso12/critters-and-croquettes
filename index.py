@@ -1,17 +1,20 @@
-from views import Varmint_Village, Slither_Inn, Critter_Cove
+from views import Varmint_Village, Slither_Inn, Critter_Cove, Chip_number
+
+areaList = []
 
 varmint_village = Varmint_Village()
 slither_inn = Slither_Inn()
 critter_cove = Critter_Cove()
 
-print(f"{varmint_village.attraction_name} is where you'll find {varmint_village.description}, like")
-for animal in varmint_village.animals:
-    print(f'   * {animal.name} the {animal.species}')
+areaList.append(varmint_village)
+areaList.append(slither_inn)
+areaList.append(critter_cove)
 
-print(f"{slither_inn.attraction_name} is where you'll find {slither_inn.description}, like")
-for animal in slither_inn.animals:
-    print(f'   * {animal.name} the {animal.species}')
+print(slither_inn.last_critter_added)
 
-print(f"{critter_cove.attraction_name} is where you'll find {critter_cove.description}, like")
-for animal in critter_cove.animals:
-    print(f'   * {animal.name} the {animal.species}')
+# for area in areaList:
+#     print(f"{area.attraction_name} is where you'll find {area.description}, like")
+#     for animal in varmint_village.animals:
+#         print(f'   * {animal.name} the {animal.species}')
+
+# Chip_number()
