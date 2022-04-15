@@ -3,11 +3,11 @@ from models import Wetlands, Bluegill, Carp, Goldfish, Bass, Minnow
 def Critter_Cove():
 
     critter_cove = Wetlands("Critter Cove", "feathered friends and fantastic fish")
-    charlie = Bluegill("Charlie", "Bluegill", "insects")
-    garp = Carp("Garp", "Carp", "insects")
+    charlie = Bluegill("Charlie", "Bluegill", "insects", 777777)
+    garp = Carp("Garp", "Carp", "insects", 888888)
     renee = Goldfish("Renee", "Goldfish", "insects", 123789)
-    jinx = Bass("Jinx", "Bass", "fish")
-    colby = Minnow("Colby", "Minnow", "insects")
+    jinx = Bass("Jinx", "Bass", "fish", 999999)
+    colby = Minnow("Colby", "Minnow", "insects", 987321)
 
     critter_cove.add_animal(charlie)
     critter_cove.add_animal(garp)
